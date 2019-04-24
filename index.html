@@ -75,9 +75,9 @@
                             Using a virtual environment
                         </li></a>
                 </ul>
-            <a class="nav-link" href="#installingdjango" rel="internal"><li>Installing Django</li></a>
-            <a class="nav-link" href="#testing" rel="internal"><li>Testing your installation</li></a>
-            <a class="nav-link" href="#summary" rel="internal"><li>Summary</li></a>
+            <a class="nav-link" href="#Installing_Django" rel="internal"><li>Installing Django</li></a>
+            <a class="nav-link" href="#Testing_your_installation" rel="internal"><li>Testing your installation</li></a>
+            <a class="nav-link" href="#Summary" rel="internal"><li>Summary</li></a>
             
         </ul>
     </nav>
@@ -145,8 +145,11 @@
                 </p>
                 <p>Python 3.5 or later can be used if needed (Python 3.5 support will be dropped in future releases).
                 </p>
-                <p class="note">Note: Python 2.7 cannot be used with Django 2.1 (The Django 1.11.x series is the last to support
-                    Python 2.7).</p>
+                <code>
+                    <p class="note"><i class="fa fa-sticky-note" aria-hidden="true">
+                         Note: Python 2.7 cannot be used with Django 2.1 (The Django 1.11.x series is the
+                            last to support
+                    Python 2.7).</p></i></code>
             </article>
         </section>
         <section class="main-section" id="Where_can_we_download_Django?">
@@ -179,9 +182,11 @@
                     data in a file. SQLite is intended for use as a lightweight database and can’t support a high level
                     of concurrency. It is, however, an excellent choice for applications that are primarily read-only.
                 </p>
-                <p class="note">Note: Django is configured to use SQLite by default when you start your website project using the
+                <code>
+                    <p class="note"><i class="fa fa-sticky-note" aria-hidden="true"> Note: Django is configured to use
+                            SQLite by default when you start your website project using the
                     standard tools (django-admin). It's a great choice when you're getting started because it requires
-                    no additional configuration or setup. </p>
+                    no additional configuration or setup. </p></i></code>
             </article>
         </section>
         <section class="main-section" id="Installing_system-wide_or_in_a_Python_virtual_environment?">
@@ -190,8 +195,10 @@
                 <p>When you install Python3 you get a single global environment that is shared by all Python3 code.
                     While you can install whatever Python packages you like in the environment, you can only install one
                     particular version of each package at a time.</p>
-                <p class="note">Note: Python applications installed into the global environment can potentially conflict with each
-                    other (i.e. if they depend on different versions of the same package). </p>
+                <code>
+                    <p class="note"><i class="fa fa-sticky-note" aria-hidden="true"> Note: Python applications installed
+                            into the global environment can potentially conflict with each
+                    other (i.e. if they depend on different versions of the same package). </p></i></code>
                 <p>If you install Django into the default/global environment then you will only be able to target one
                     version of Django on the computer. This can be a problem if you want to create new websites (using
                     the latest version of Django) while still maintaining websites that rely on older versions.</p>
@@ -212,10 +219,12 @@
                 </p>
                 <p>This section briefly explains how you can check what versions of Python are present, and install new
                     versions as needed, for Ubuntu Linux 18.04, macOS, and Windows 10.</p>
-                <p class="note">Note: Depending on your platform, you may also be able to install Python/pip from the operating
+                <code>
+                    <p class="note"><i class="fa fa-sticky-note" aria-hidden="true"> Note: Depending on your platform,
+                            you may also be able to install Python/pip from the operating
                     system's own package manager or via other mechanisms. For most platforms, you can download the
                     required installation files from https://www.python.org/downloads/ and install them using the
-                    appropriate platform-specific method.</p>
+                    appropriate platform-specific method.</p></i></code>
             </article>
         </section>
         <section class="main-section" id="Ubuntu_18.04">
@@ -249,14 +258,14 @@
                 </li>
             </ol>
             <p>You can now confirm successful installation by checking for the Python 3 as shown below:</p>
-            <ol>
+            <code><ol>
                 <li>python3 -V</li>
                 <li>Python 3.7.2</li>
-            </ol>
+            </ol></code>
             <p>You can similarly check that pip3 is installed by listing the available packages:</p>
-            <ol>
+            <code><ol>
                 <li>pip3 list</li>
-            </ol>
+            </ol></code>
             </article>
         </section>
         <section class="main-section" id="Windows_10">
@@ -281,10 +290,16 @@
                 <ol>
                     <li class="pip3">pip3 list</li>
                 </ol>
-                <p class="note">Note: The installer should set up everything you need for the above command to work. If however you get a message that Python cannot be found, you may have forgotten to add it to your system path. You can do this by running the installer again, selecting "Modify", and checking the box labeled "Add Python to environment variables" on the second page.</p>
+                <code>
+                    <p class="note"><i class="fa fa-sticky-note" aria-hidden="true"> Note: The installer should set up
+                            everything you need for the above command to work. If however you get a message that Python
+                            cannot be found, you may have forgotten to add it to your system path. You can do this by
+                            running the installer again, selecting "Modify", and checking the box labeled "Add Python to
+                            environment variables" on the second page.</p></i>
+                </code>
             </article>
         <hr>
-        <section class="main-section" id="#Using_Django_inside_a_Python_virtual_environment">
+        <section class="main-section" id="Using_Django_inside_a_Python_virtual_environment">
             <header><h3>Using Django inside a Python virtual environment</h3></header>
             <article>
                 <p>The libraries we'll use for creating our virtual environments are virtualenvwrapper (Linux and macOS) and virtualenvwrapper-win (Windows), which in turn both use the virtualenv tool. The wrapper tools creates a consistent interface for managing interfaces on all platforms.</p>
@@ -303,13 +318,113 @@
                 <p class="pipVirtual">export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=' -p /usr/bin/python3 '</p>
                 <p class="pipVirtual">export PROJECT_HOME=$HOME/Devel</p>
                 <p class="pipVirtual">source /usr/local/bin/virtualenvwrapper.sh</p>
-                <p class="note">Note: The VIRTUALENVWRAPPER_PYTHON and VIRTUALENVWRAPPER_VIRTUALENV_ARGS variables point to the normal installation location for Python3, and source /usr/local/bin/virtualenvwrapper.sh points to the normal location of the virtualenvwrapper.sh script. If the virtualenv doesn't work when you test it, one thing to check is that Python and the script are in the expected location (and then change the startup file appropriately).<br />
+                <p class="note"> Note: The VIRTUALENVWRAPPER_PYTHON and VIRTUALENVWRAPPER_VIRTUALENV_ARGS variables point to the normal installation location for Python3, and source /usr/local/bin/virtualenvwrapper.sh points to the normal location of the virtualenvwrapper.sh script. If the virtualenv doesn't work when you test it, one thing to check is that Python and the script are in the expected location (and then change the startup file appropriately).<br />
 
                     You can find the correct locations for your system using the commands which virtualenvwrapper.sh and which python3.</p>
-
+                <p>Then reload the startup file by running the following command in the terminal:</p>
+                <code><p class="blueBackground">source ~/.bashrc</p></code>
+                <p>At this point you should see a bunch of scripts being run as shown below:</p>
+                <code><p class="blueBackground">virtualenvwrapper.user_scripts creating /home/ubuntu/.virtualenvs/premkproject<br />
+                    virtualenvwrapper.user_scripts creating /home/ubuntu/.virtualenvs/postmkproject<br />
+                    ...
+                    virtualenvwrapper.user_scripts creating /home/ubuntu/.virtualenvs/preactivate<br />
+                    virtualenvwrapper.user_scripts creating /home/ubuntu/.virtualenvs/postactivate<br />
+                    virtualenvwrapper.user_scripts creating /home/ubuntu/.virtualenvs/get_env_details</p>
+                <p>Now you can create a new virtual environment with the mkvirtualenv command.</p></code>
             </article>
-
         </section>
+        <section class="main-section" id="macOS_virtual_environment_setup">
+            <header>
+                <h6>macOS virtual environment setup</h6>
+            </header>
+            <article>
+                <p>Setting up virtualenvwrapper on macOS is almost exactly the same as on Ubuntu (again, you can follow
+                    the instructions from either the official installation guide or below.</p>
+                <p>Install virtualenvwrapper (and bundling virtualenv) using pip as shown.</p>
+                <code><p class="blueBackground">sudo pip3 install virtualenvwrapper</p></code>
+                <p>Then add the following lines to the end of your shell startup file.</p>
+                <div class="blueBackground"><code>
+                <p>export WORKON_HOME=$HOME/.virtualenvs</p>
+                <p>export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3</p>
+                <p>export PROJECT_HOME=$HOME/Devel</p>
+                <p>source /usr/local/bin/virtualenvwrapper.sh</p></code>
+                <code></div>
+                    <p class="note"><i class="fa fa-sticky-note" aria-hidden="true"> Note: The VIRTUALENVWRAPPER_PYTHON
+                            variable points to the normal installation location
+                    for Python3, and source /usr/local/bin/virtualenvwrapper.sh points to the normal location of the
+                    virtualenvwrapper.sh script. If the virtualenv doesn't work when you test it, one thing to check is
+                    that Python and the script are in the expected location (and then change the startup file
+                    appropriately).</p></i></code>
+                <p class="note"><i class="fa fa-sticky-note" aria-hidden="true">For example, one installation test on
+                        macOS ended up with the following lines being
+                    necessary in the startup file:</p></i></code>
+                <ol class="blueBackground">
+                    <li>export WORKON_HOME=$HOME/.virtualenvs</li>
+                    <li>export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3</li>
+                    <li>export PROJECT_HOME=$HOME/Devel</li>
+                    <li>source /Library/Frameworks/Python.framework/Versions/3.7/bin/virtualenvwrapper.sh</li>
+                </ol>
+                <code>
+                    <p class="note"><i class="fa fa-sticky-note" aria-hidden="true">You can find the correct locations
+                            for your system using the commands which
+                    virtualenvwrapper.sh and which python3.</p></i></code>
+                <p>These are the same lines as for Ubuntu, but the startup file is the differently named hidden file
+                    .bash_profile in your home directory.</p>
+                <code><div class="note">
+                    <p><i class="fa fa-sticky-note" aria-hidden="true"> Note: If you can't find .bash_profile to edit in
+                            the finder, you can also open this in the
+                        terminal using nano.</p></i>
+                    <p>The commands look something like this:</p>
+                    <ul class="blueBackground">
+                        <li>cd ~ # Navigate to my home directory</li>
+                        <li>ls -la #List the content of the directory. YOu should see .bash_profile</li>
+                        <li>nano .bash_profile # Open the file in the nano text editor, within the terminal</li>
+                        <li># Scroll to the end of the file, and copy in the lines above</li>
+                        <li># Use Ctrl+X to exit nano, Choose Y to save the file.</li>
+                    </ul>
+                </div></code>
+                <p>Then reload the startup file by making the following call in the terminal:</p>
+                <code><p class="blueBackground">source ~/.bash_profile</p></code>
+                <p>At this point, you may see a bunch of scripts being run (the same scripts as for the Ubuntu
+                    installation). You should now be able to create a new virtual environment with the <mark>mkvirtualenv</mark>
+                    command.</p>
+            </article>
+            </section>
+            <section class="main-section" id="Windows_10_virtual_environment_setup">
+                <header>
+                    <h6>Windows 10 virtual environment setup</h6>
+                </header>
+                <p>Installing virtualenvwrapper-win is even simpler than setting up virtualenvwrapper because you don't
+                    need to configure where the tool stores virtual environment information (there is a default value).
+                    All you need to do is run the following command in the command prompt:</p>
+                <p class="blueBackground">pip3 install virtualenvwrapper-win</p>
+                <p>Now you can create a new virtual environment with the <mark>mkvirtualenv</mark> command</p>
+                <h5 class="softTitle" id="Creating_a_virtual_environment">Creating a virtual environment</h5>
+                <p>Once you've installed virtualenvwrapper or virtualenvwrapper-win then working with virtual
+                    environments is very similar on all platforms.</p>
+                <p>Now you can create a new virtual environment with the <mark>mkvirtualenv</mark> command. As this command runs
+                    you'll see the environment being set up (what you see is slightly platform specific). When the
+                    command completes the new virtual environment will be active — you can see this because the start of
+                    the prompt will be the name of the environment in brackets (below we show this for Ubuntu, but the
+                    final line is similar for Windows/macOS).</p>
+                <div class="blueBackground">
+                    <p>$ mkvirtualenv my_django_environment</p>
+                    <p>Running virtualenv with interpreter /usr/bin/python3</p>
+                    <p>...</p>
+                    <p>virtualenvwrapper.user_scripts creating /home/ubuntu/.virtualenvs/t_env7/bin/get_env_details
+                        (my_django_environment) ubuntu@ubuntu:~$</p>
+                </div>
+                <p>Now you're inside the virtual environment you can install Django and start developing.</p>
+                <div class="note">
+                    <code>
+                    <p><i class="fa fa-sticky-note" aria-hidden="true"> Note: From now on in this article (and indeed
+                            the module) please assume that any commands are run within a Python virtual environment like
+                            the one we set up above.</i></p></code>
+                </div>
+                <h5 class="softTitle" id="Using_a_virtual_environment">Using a virtual environment</h5>
+
+                <article>
+
 
 
 

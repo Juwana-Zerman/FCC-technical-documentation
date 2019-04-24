@@ -2,7 +2,7 @@ html,
 body {
     min-width: 300px;
     color: #000;
-    background-color: #f0dddd;
+    background-color: white;
     font-family: 'Open Sans', Arial, sans-serif;
     line-height: 1.75;
 }
@@ -80,4 +80,33 @@ h3 {
 
 footer {
     text-align: center;
+}
+
+.blueBackground {
+    background-color: #bdcbcf;
+    border-left: 3px solid blue;
+    padding-left: 20px;
+    width: 97%;
+}
+
+mark {
+    background-color: #bdcbcf;
+}
+
+.note {
+    background-color: #f5f1cc;
+    border-left: 3px solid #ffa500;
+    padding-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.softTitle {
+    background-color: #3f3d3d;
+    color: white;
+    padding-left: 20px;
+    width: 40%;
+    border-radius: 5px;
 }
