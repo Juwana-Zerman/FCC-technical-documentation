@@ -34,12 +34,11 @@
                         <a class="nav-link" href="#Which_database?" rel="internal"><li>
                             Which database?
                         </li></a>
-                        <a class=nav-link" href="#Installing_system-wide_or_in_a_Python_virtual_environment?" rel=internal"><li>
-                            Installing system-wide or in a Python virtual environment?
-                        </li></a>
+                        <a class="nav-link" href="#Installing_system-wide_or_in_a_Python_virtual_environment?" rel="internal"><li>
+                            Installing system-wide or in a Python virtual environment?</li></a>
                     </ul>
                 </li></a>
-            <a class="nav-link" href="Installing_Python_3" rel="internal"><li>Installing Python 3
+            <a class="nav-link" href="#Installing_Python_3" rel="internal"><li>Installing Python 3
                 <ul>
                     <a class="nav-link" href="#Ubuntu_18.04" rel="internal">
                         <li>Ubuntu 18.04</li>
@@ -84,8 +83,13 @@
     </nav>
     <main id="main-doc">
         <header class="title"><h3>Setting Up A Django Development Environment</h3></header>
+        <p>Now that you know what Django is for, we'll show you how to set up and test a Django development environment on Windows, Linux (Ubuntu), and macOS — whatever common operating system you are using, this article should give you what you need to be able to start developing Django apps.</p>
+        <p class="prerequisites">
+            Prerequisites:	Know how to open a terminal / command line. Know how to install software packages on your development                       computer's operating system. <br />
+            Objective:	To have a development environment for Django (2.0) running on your computer
+        </p>
         <section class="main-section" id="overview">
-            <header><h4>Overview</h4></header>
+            <header><h3>Overview</h3></header>
             <article>
                 <p>Django makes it very easy to set up your own computer so that you can start developing web applications. This section
                 explains what you get with the development environment, and provides an overview of some of your setup and configuration
@@ -95,7 +99,7 @@
             </article>
         </section>
         <section class="main-section" id="What_is_the_Django_development_environment?">
-        <header>What is the Django development environment?</header>
+        <header><h6>What is the Django development environment?</h6></header>
         <article>
             <p>The development environment is an installation of Django on your local computer that you can use for
             developing and testing Django apps prior to deploying them to a production environment.</p>
@@ -109,7 +113,7 @@
         </article>
         </section>
         <section class="main-section" id="What_are_the_Django_setup_options?">
-            <header>What are the Django setup options?</header>
+            <header><h6>What are the Django setup options?</h6></header>
             <article>
                 <p>Django is extremely flexible in terms of how and where it can be installed and configured. Django can be:</p>
                     <li>Installed on different operating systems.</li>
@@ -126,7 +130,7 @@
             </article>
         </section>
         <section class="main-section" id="What_operating_systems_are_supported?">
-            <header>What operating systems are supported?</header>
+            <header><h6>What operating systems are supported?</h6></header>
             <article>
                 <p>Django web applications can be run on almost any machine that can run the Python 3 programming
                     language: Windows, macOS, Linux/Unix, Solaris, to name just a few. Almost any computer should have
@@ -135,18 +139,18 @@
             </article>
         </section>
         <section class="main-section" id="What_version_of_Python_should_be_used?">
-            <header>What version of Python should be used?</header>
+            <header><h6>What version of Python should be used?</h6></header>
             <article>
                 <p>We recommend that you use the most recent version available — at time of writing this is Python 3.7.2
                 </p>
                 <p>Python 3.5 or later can be used if needed (Python 3.5 support will be dropped in future releases).
                 </p>
-                <p>Note: Python 2.7 cannot be used with Django 2.1 (The Django 1.11.x series is the last to support
+                <p class="note">Note: Python 2.7 cannot be used with Django 2.1 (The Django 1.11.x series is the last to support
                     Python 2.7).</p>
             </article>
         </section>
         <section class="main-section" id="Where_can_we_download_Django?">
-            <header>Where can we download Django?</header>
+            <header><h6>Where can we download Django?</h6></header>
             <article>
                 <p>There are three places to download Django:</p>
                 <li>The Python Package Repository (PyPi), using the pip tool. This is the best way to get the latest
@@ -163,7 +167,7 @@
             </article>
         </section>
         <section class="main-section" id="Which_database?">
-            <header>Which database?</header>
+            <header><h6>Which database?</h6></header>
             <article>
                 <p>Django supports four main databases (PostgreSQL, MySQL, Oracle, and SQLite), and there are community
                     libraries that provide varying levels of support for other popular SQL and NoSQL databases. We
@@ -175,18 +179,18 @@
                     data in a file. SQLite is intended for use as a lightweight database and can’t support a high level
                     of concurrency. It is, however, an excellent choice for applications that are primarily read-only.
                 </p>
-                <p>Note: Django is configured to use SQLite by default when you start your website project using the
+                <p class="note">Note: Django is configured to use SQLite by default when you start your website project using the
                     standard tools (django-admin). It's a great choice when you're getting started because it requires
                     no additional configuration or setup. </p>
             </article>
         </section>
         <section class="main-section" id="Installing_system-wide_or_in_a_Python_virtual_environment?">
-            <header>Installing system-wide or in a Python virtual environment?</header>
+            <header><h6>Installing system-wide or in a Python virtual environment?</h6></header>
             <article>
                 <p>When you install Python3 you get a single global environment that is shared by all Python3 code.
                     While you can install whatever Python packages you like in the environment, you can only install one
                     particular version of each package at a time.</p>
-                <p>Note: Python applications installed into the global environment can potentially conflict with each
+                <p class="note">Note: Python applications installed into the global environment can potentially conflict with each
                     other (i.e. if they depend on different versions of the same package). </p>
                 <p>If you install Django into the default/global environment then you will only be able to target one
                     version of Django on the computer. This can be a problem if you want to create new websites (using
@@ -198,8 +202,9 @@
                     below.</p>
             </article>
         </section>
+        <hr>
         <section class="main-section" id="Installing_Python_3">
-            <header><h4>Installing Python 3</h4></header>
+            <header><h3>Installing Python 3</h3></header>
             <article>
                 <p>In order to use Django you will have to install Python on your operating system. If you're using
                     Python 3 then you will also need the Python Package Index tool — pip3 — which is used to manage
@@ -207,26 +212,26 @@
                 </p>
                 <p>This section briefly explains how you can check what versions of Python are present, and install new
                     versions as needed, for Ubuntu Linux 18.04, macOS, and Windows 10.</p>
-                <p>Note: Depending on your platform, you may also be able to install Python/pip from the operating
+                <p class="note">Note: Depending on your platform, you may also be able to install Python/pip from the operating
                     system's own package manager or via other mechanisms. For most platforms, you can download the
                     required installation files from https://www.python.org/downloads/ and install them using the
                     appropriate platform-specific method.</p>
             </article>
         </section>
         <section class="main-section" id="Ubuntu_18.04">
-            <header><h5>Ubuntu 18.04</h5></header>
+            <header><h6>Ubuntu 18.04</h6></header>
             <article>
-            <p>Ubuntu Linux 18.04 LTS includes Python 3.6.6 by default. You can confirm this by running the following
-                command in the bash terminal:</p>
-            <p>python3 -V</p>
-            <p>Python 3.6.6</p>
-            <p>However, the Python Package Index tool you'll need to install packages for Python 3 (including Django) is
-                not available by default. You can install pip3 in the bash terminal using:</p>
+            <p>Ubuntu Linux 18.04 LTS includes Python 3.6.6 by default. You can confirm this by running the following command in the bash terminal:</p>
+            <ol>
+                <li>python3 -V</li>
+                <li>Python 3.6.6</li>
+            </ol>
+            <p>However, the Python Package Index tool you'll need to install packages for Python 3 (including Django) is not available by default. You can install pip3 in the bash terminal using:</p>
             <p>sudo apt install python3-pip</p>
             </article>
         </section>
         <section class="main-section" id="macOS">
-            <header><h5>macOS</h5></header>
+            <header><h6>macOS</h6></header>
             <article>
             <p>macOS "El Capitan" and other more recent versions do not include Python 3. You can confirm this by
                 running the following commands in the bash terminal:</p>
@@ -244,18 +249,65 @@
                 </li>
             </ol>
             <p>You can now confirm successful installation by checking for the Python 3 as shown below:</p>
-            <p>python3 -V</p>
-            <p>Python 3.7.2</p>
+            <ol>
+                <li>python3 -V</li>
+                <li>Python 3.7.2</li>
+            </ol>
             <p>You can similarly check that pip3 is installed by listing the available packages:</p>
-            <p>pip3 list</p>
+            <ol>
+                <li>pip3 list</li>
+            </ol>
             </article>
         </section>
-        
-        
-        
-        
+        <section class="main-section" id="Windows_10">
+            <header><h6>Windows 10</h6></header>
+            <article>
+                <p>Windows doesn't include Python by default, but you can easily install it (along with the pip3 tool) from python.org:</p>
+                <ol>
+                    <li>Download the required installer:</li>
+                    <ol>
+                        <li>Go to https://www.python.org/downloads/</li>
+                        <li>Select the Download Python 3.7.2 button (the exact minor version number may differ)</li>
+                    </ol>
+                    <li>Install Python by double-clicking on the downloaded file and following the installation prompts</li>
+                    <li>Be sure to check the box labeled "Add Python to PATH"</li>
+                </ol>
+                <p>You can then verify that Python 3 was installed by entering the following text into the command prompt:</p>
+                <ol>
+                    <li>py -3 -V </li>
+                        <li>Python 3.7.2</li>
+                </ol>
+                <p>The Windows installer incorporates pip3 (the Python package manager) by default. You can list installed packages as shown:</p>
+                <ol>
+                    <li class="pip3">pip3 list</li>
+                </ol>
+                <p class="note">Note: The installer should set up everything you need for the above command to work. If however you get a message that Python cannot be found, you may have forgotten to add it to your system path. You can do this by running the installer again, selecting "Modify", and checking the box labeled "Add Python to environment variables" on the second page.</p>
+            </article>
+        <hr>
+        <section class="main-section" id="#Using_Django_inside_a_Python_virtual_environment">
+            <header><h3>Using Django inside a Python virtual environment</h3></header>
+            <article>
+                <p>The libraries we'll use for creating our virtual environments are virtualenvwrapper (Linux and macOS) and virtualenvwrapper-win (Windows), which in turn both use the virtualenv tool. The wrapper tools creates a consistent interface for managing interfaces on all platforms.</p>
+            </article>
+        </section>
+        <h5 class="softTitle">Installing the virtual environment software</h5>
         <section class="main-section" id="Ubuntu_virtual_environment_setup">
-            <header>Ubuntu virtual environment setup</header>
+            <header><h6>Ubuntu virtual environment setup</h6></header>
+            <article>
+                <p>After installing Python and pip you can install virtualenvwrapper (which includes virtualenv). The official installation guide can be found here, or follow the instructions below.</p>
+                <p>Install the tool using pip3:</p><br />
+                <p class="pipVirtual">sudo pip3 install virtualenvwrapper</p><br />
+                <p>Then add the following lines to the end of your shell startup file (this is a hidden file name .bashrc in your home directory). These set the location where the virtual environments should live, the location of your development project directories, and the location of the script installed with this package:</p>
+                <p class="pipVirtual">export WORKON_HOME=$HOME/.virtualenvs</p>
+                <p class="pipVirtual">export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3</p>
+                <p class="pipVirtual">export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=' -p /usr/bin/python3 '</p>
+                <p class="pipVirtual">export PROJECT_HOME=$HOME/Devel</p>
+                <p class="pipVirtual">source /usr/local/bin/virtualenvwrapper.sh</p>
+                <p class="note">Note: The VIRTUALENVWRAPPER_PYTHON and VIRTUALENVWRAPPER_VIRTUALENV_ARGS variables point to the normal installation location for Python3, and source /usr/local/bin/virtualenvwrapper.sh points to the normal location of the virtualenvwrapper.sh script. If the virtualenv doesn't work when you test it, one thing to check is that Python and the script are in the expected location (and then change the startup file appropriately).<br />
+
+                    You can find the correct locations for your system using the commands which virtualenvwrapper.sh and which python3.</p>
+
+            </article>
 
         </section>
 
