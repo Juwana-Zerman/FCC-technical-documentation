@@ -1,0 +1,75 @@
+html,
+body {
+    min-width: 300px;
+    color: #000;
+    background-color: #f0dddd;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.75;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 300px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: hsla(180, 40%, 46%, 0.4)
+}
+
+header {
+    color: black;
+    font-size: 28px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: thin;
+}
+
+#main-doc header {
+    text-align: left;
+    margin: 0px;
+}
+
+#navbar ul {
+    height: 88%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    color: #343436;
+    border: 1px solid;
+    border-bottom-width: 0px;
+    padding: 8px;
+    padding-left: 45px;
+    list-style: none;
+    position: relative;
+    left: -50px;
+    width: 100%;
+
+}
+
+#navbar a {
+    color: #22242e;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+section article {
+    color: #373a47;
+    margin: 15px;
+    font-size: 0.90em;
+}
+
+section li {
+    margin: 15px 0px 0px 20px;
+}
