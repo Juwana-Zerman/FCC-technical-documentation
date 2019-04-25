@@ -14,7 +14,7 @@
     <nav id="navbar">
         <header>Django Documentation</header>
         <ul>
-            <a class="nav-link" href="#overview" rel="internal">
+            <a class="nav-link" href="#Overview" rel="internal">
                 <li>Overview
                     <ul>
                         <a class="nav-link" href="#What_is_the_Django_development_environment?" rel="internal">
@@ -57,8 +57,7 @@
             <a class="nav-link" href="#Using_Django_inside_a_Python_virtual_environment" rel="internal"><li>Using Django inside a Python virtual environment</li></a>
                 
                 <ul>
-                    <a class="nav-link" href="#Installing_the_virtual_environment_software" rel="internal">
-                        <li>Installing the virtual environment software</li></a>
+                   
                     <a class="nav-link" href="#Ubuntu_virtual_environment_setup" rel="internal">
                         <li>Ubuntu virtual environment setup</li></a>
                     <a class="nav-link" href="#macOS_virtual_environment_setup" rel="internal">
@@ -69,19 +68,14 @@
                         <li>
                             Windows 10 virtual environment setup
                         </li></a>
-                    <a class="nav-link" href="#Creating_a_virtual_environment" rel="internal">
-                        <li>
-                            Creating a virtual environment
-                        </li></a>
-                    <a class="nav-link" href="#Using_a_virtual_environment" rel="internal">
-                        <li>
-                            Using a virtual environment
-                        </li></a>
-                </ul>
+                    
+                    
+              
             <a class="nav-link" href="#Installing_Django" rel="internal"><li>Installing Django</li></a>
-            <a class="nav-link" href="#Testing_your_installation" rel="internal"><li>Testing your installation</li></a>
-            <a class="nav-link" href="#Summary" rel="internal"><li>Summary</li></a>
             
+            <a class="nav-link" href="#Testing_your_installation" rel="internal"><li>Testing your installation</li></a>
+            
+            <a class="nav-link" href="#Summary" rel="internal"><li>Summary</li></a>           
         </ul>
     </nav>
     <main id="main-doc">
@@ -91,7 +85,7 @@
             Prerequisites:	Know how to open a terminal / command line. Know how to install software packages on your development                       computer's operating system. <br />
             Objective:	To have a development environment for Django (2.0) running on your computer
         </p>
-        <section class="main-section" id="overview">
+        <section class="main-section" id="Overview">
             <header><h3>Overview</h3></header>
             <article>
                 <p>Django makes it very easy to set up your own computer so that you can start developing web applications. This section
@@ -308,7 +302,7 @@
                 <p>The libraries we'll use for creating our virtual environments are virtualenvwrapper (Linux and macOS) and virtualenvwrapper-win (Windows), which in turn both use the virtualenv tool. The wrapper tools creates a consistent interface for managing interfaces on all platforms.</p>
             </article>
         </section>
-        <h5 class="softTitle" id="Installing_the_virtual_environment_software">Installing the virtual environment software</h5>
+        <h5 id="Installing_the_virtual_environment_software">Installing the virtual environment software</h5>
         <section class="main-section" id="Ubuntu_virtual_environment_setup">
             <header><h6>Ubuntu virtual environment setup</h6></header>
             <article>
@@ -400,7 +394,7 @@
                     All you need to do is run the following command in the command prompt:</p>
                 <code><p class="blueBackground">pip3 install virtualenvwrapper-win</p></code>
                 <p>Now you can create a new virtual environment with the <mark>mkvirtualenv</mark> command</p>
-                <h5 class="softTitle" id="Creating_a_virtual_environment">Creating a virtual environment</h5>
+                <h5 id="Creating_a_virtual_environment">Creating a virtual environment</h5>
                 <p>Once you've installed virtualenvwrapper or virtualenvwrapper-win then working with virtual
                     environments is very similar on all platforms.</p>
                 <p>Now you can create a new virtual environment with the <mark>mkvirtualenv</mark> command. As this command runs
@@ -423,7 +417,7 @@
                             the module) please assume that any commands are run within a Python virtual environment like
                             the one we set up above.</i></p></code>
                 </div>
-                <h5 class="softTitle" id="Using_a_virtual_environment">Using a virtual environment</h5>
+                <h5 id="Using_a_virtual_environment">Using a virtual environment</h5>
                 <p>There are just a few other useful commands that you should know (there are more in the tool
                     documentation, but these are the ones you'll use regularly):</p>
                     <ul>
@@ -516,10 +510,35 @@
                             point!</i></p>
                     <p>Once the server is running you can view the site by navigating to the following URL on your local
                         web browser: http://127.0.0.1:8000/. You should see a site that looks like this:</p>
+                    <a href="https://imgur.com/cTPSbVQ"><img src="https://i.imgur.com/cTPSbVQ.png"
+                            title="source: imgur.com" /></a>
+                    <hr size="3" color="blue">
+                    <section class="main-section" id="Summary">
+                        <header>
+                            <h3>Summary</h3>
+                        </header>
+                        <article>
+                            <p>You now have a Django development environment up and running on your computer.</p>
+                            <br>
+                            <p>In the testing section you also briefly saw how we can create a new Django website using
+                                django-admin startproject, and run it in your browser using the development web server
+                                (<mark>python3 manage.py runserver</mark>). In the next article we expand on this process, building a
+                                simple but complete web application.</p>
                     
+                    <hr size="3" color="blue">
+                    
+                        <header>
+                            <h3>Reference</h3>
+                        </header>
+                        <article>
+                            All the documentation in this page is taken from the MDN Django Tutorial Section: Setting up a Django development environment here: 
+                            <a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/development_environment" target="_blank">MDN</a>
+                        </article>
+                       
 
 
-
+        <br>
+        <br>
         <br>
         <div class="footer-info">
             <footer>

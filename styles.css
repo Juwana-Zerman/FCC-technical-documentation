@@ -19,7 +19,8 @@ hr {
     width: 300px;
     height: 100%;
     border-right: solid;
-    border-color: hsla(180, 40%, 46%, 0.4)
+    border-color: hsla(180, 40%, 46%, 0.4);
+    overflow: hidden;
 }
 
 header {
@@ -113,7 +114,7 @@ ul {
     list-style-type: none;
 }
 
-.softTitle {
+h5 {
     background-color: #3f3d3d;
     color: white;
     padding-left: 20px;
