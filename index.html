@@ -13,10 +13,10 @@
 <body>
     <nav id="navbar">
         <header>Django Documentation</header>
-        <ul>
+            <ul>
             <a class="nav-link" href="#Overview" rel="internal">
-                <li>Overview
-                    <ul>
+                <li>Overview</li></a>
+                    
                         <a class="nav-link" href="#What_is_the_Django_development_environment?" rel="internal">
                         <li>What is the Django development environment?</li></a>
                         <a class="nav-link" href="#What_are_the_Django_setup_options?" rel="internal"><li>
@@ -36,10 +36,10 @@
                         </li></a>
                         <a class="nav-link" href="#Installing_system-wide_or_in_a_Python_virtual_environment?" rel="internal"><li>
                             Installing system-wide or in a Python virtual environment?</li></a>
-                    </ul>
-                </li></a>
-            <a class="nav-link" href="#Installing_Python_3" rel="internal"><li>Installing Python 3
-                <ul>
+                    
+            <a class="nav-link" href="#Installing_Python_3" rel="internal">
+                <li>Installing Python 3</li></a>
+                    
                     <a class="nav-link" href="#Ubuntu_18.04" rel="internal">
                         <li>Ubuntu 18.04</li>
                     </a>
@@ -49,15 +49,10 @@
                         </li>
                     </a>
                     <a class="nav-link" href="#Windows_10" rel="internal">
-                        <li>
-                            Windows 10
-                        </li></a>
-                </ul>
-            </li></a>
+                        <li>Windows 10</li></a>
+                
             <a class="nav-link" href="#Using_Django_inside_a_Python_virtual_environment" rel="internal"><li>Using Django inside a Python virtual environment</li></a>
                 
-                <ul>
-                   
                     <a class="nav-link" href="#Ubuntu_virtual_environment_setup" rel="internal">
                         <li>Ubuntu virtual environment setup</li></a>
                     <a class="nav-link" href="#macOS_virtual_environment_setup" rel="internal">
@@ -68,14 +63,14 @@
                         <li>
                             Windows 10 virtual environment setup
                         </li></a>
-                    
-                    
-              
+                         
             <a class="nav-link" href="#Installing_Django" rel="internal"><li>Installing Django</li></a>
             
             <a class="nav-link" href="#Testing_your_installation" rel="internal"><li>Testing your installation</li></a>
             
-            <a class="nav-link" href="#Summary" rel="internal"><li>Summary</li></a>           
+            <a class="nav-link" href="#Summary" rel="internal"><li>Summary</li></a>      
+            
+            <a class="nav-link" href="#Reference" rel="internal"><li>Reference</li></a>         
         </ul>
     </nav>
     <main id="main-doc">
@@ -295,6 +290,7 @@
                             environment variables" on the second page.</p></i>
                 </code>
             </article>
+            </section>
         <hr size="3" color="blue">
         <section class="main-section" id="Using_Django_inside_a_Python_virtual_environment">
             <header><h3>Using Django inside a Python virtual environment</h3></header>
@@ -389,6 +385,7 @@
                 <header>
                     <h6>Windows 10 virtual environment setup</h6>
                 </header>
+                <article>
                 <p>Installing virtualenvwrapper-win is even simpler than setting up virtualenvwrapper because you don't
                     need to configure where the tool stores virtual environment information (there is a default value).
                     All you need to do is run the following command in the command prompt:</p>
@@ -426,7 +423,8 @@
                         <li><mark>workon name_of_environment</mark> — Activate the specified Python virtual environment</li>
                         <li><mark>rmvirtualenv name_of_environment</mark> — Remove the specified environment.</li>
                     </ul>
-                <article>
+                </article>
+                </section>
                 <hr size="3" color="blue">
                 <section class="main-section" id="Installing_Django">
                 <header>
@@ -463,6 +461,7 @@
                             replace this prefix with: <mark>py -3</mark></i></p>
                 </div>
              </article>
+             </section>
              <hr size="3" color="blue">
              <section class="main-section" id="Testing_your_installation">
                  <header>
@@ -512,6 +511,8 @@
                         web browser: http://127.0.0.1:8000/. You should see a site that looks like this:</p>
                     <a href="https://imgur.com/cTPSbVQ"><img src="https://i.imgur.com/cTPSbVQ.png"
                             title="source: imgur.com" /></a>
+                    </article>
+                    </section>
                     <hr size="3" color="blue">
                     <section class="main-section" id="Summary">
                         <header>
@@ -524,30 +525,22 @@
                                 django-admin startproject, and run it in your browser using the development web server
                                 (<mark>python3 manage.py runserver</mark>). In the next article we expand on this process, building a
                                 simple but complete web application.</p>
-                    
+                    </article>
+                    </section>
                     <hr size="3" color="blue">
-                    
+                    <section class="main-section" id="Reference">
                         <header>
                             <h3>Reference</h3>
                         </header>
                         <article>
-                            All the documentation in this page is taken from the MDN Django Tutorial Section: Setting up a Django development environment here: 
+                            All the documentation in this page is taken from the MDN Django Tutorial Section: Setting up a Django development environment at: 
                             <a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/development_environment" target="_blank">MDN</a>
                         </article>
+                    </section>
                        
 
 
-        <br>
-        <br>
-        <br>
-        <div class="footer-info">
-            <footer>
-            <div class="copyright">
-                <p>Made with <i class="fa fa-heartbeat"></i> by Juwana Zerman &copy; 2019 </p>
-            </div>
-        </footer>
-    </div>
-</div>
+        
     </main>
         
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
