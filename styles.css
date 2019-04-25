@@ -13,16 +13,16 @@ hr {
 
 #navbar {
     position: fixed;
-    min-width: 300px;
+    
     top: 0px;
     left: 0px;
+    bottom: 0;
     width: 300px;
     height: 100%;
     border-right: solid;
     border-color: hsla(180, 40%, 46%, 0.4);
     overflow: hidden;
-    padding-top: 0;
-    padding-bottom: 0;
+    margin: 0 auto;
 }
 
 header {
@@ -40,10 +40,9 @@ header {
 }
 
 #navbar ul {
-    height: 88%;
-    overflow-y: auto;
+    height: 75%;
     overflow-x: hidden;
-    margin-bottom: 0;
+   
 }
 
 #navbar li {
@@ -56,7 +55,7 @@ header {
     position: relative;
     left: -50px;
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 #navbar a {
